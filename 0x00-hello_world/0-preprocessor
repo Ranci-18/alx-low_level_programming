@@ -1,2 +1,2 @@
-1 #!/bin/bash
-2 cpp $CFILE > c
+#!/bin/bash
+cpp $CFILE > c
