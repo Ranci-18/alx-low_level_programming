@@ -2,7 +2,8 @@
 
 /**
  *main entry point
- *return null always*/
+ *return null always
+ */
 
 int main(void)
 
