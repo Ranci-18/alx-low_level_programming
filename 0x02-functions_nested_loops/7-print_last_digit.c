@@ -21,7 +21,7 @@ int print_last_digit(int n)
 		}
 	else
 		{
-		return (last_digit);
+		return (-last_digit);
 		}
 
 }
