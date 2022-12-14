@@ -5,7 +5,7 @@
  *add - computes sum
  *@x: is first number
  *@y: is second number
- *Returns: addition of two numbers
+ *Returns: add two numbers
  */
 
 int add(int x, int y)
