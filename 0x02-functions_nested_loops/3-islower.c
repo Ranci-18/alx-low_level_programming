@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	if (islower(c))
 		{
-		putchar(c);
+		_putchar(c);
 		return (1);
 		
 		}
