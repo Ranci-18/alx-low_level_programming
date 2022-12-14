@@ -3,9 +3,13 @@
 
 /**
  *add - computes sum
+ *
  *@x: is first number
+ *
  *@y: is second number
+ *
  *Returns: Add number one and number two
+ *
  */
 
 int add(int x, int y)
