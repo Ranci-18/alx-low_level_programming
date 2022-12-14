@@ -4,11 +4,11 @@
 /**
  *maint - entry point
  *
- *
+ *print_alphabet: prints the alphabet
  *
  *Return: Always 0 (Success)
  */
-/*prints the alphabet*/
+
 void print_alphabet(void)
 
 {
