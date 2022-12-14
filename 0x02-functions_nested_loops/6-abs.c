@@ -11,7 +11,7 @@
 int _abs(int x, int y)
 {
 	x = -1;
-	int y = abs(x);
+	y = abs(x);
 
 	putchar(y);
 	return (y);
