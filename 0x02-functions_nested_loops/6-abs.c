@@ -4,11 +4,11 @@
 
 /**
  *_abs - computes absolute integer value
- *
+ *@x - holds initial value
  *Return: absolute value
  */
 
-int _abs(int)
+int _abs(int x)
 {
 	int x = abs(x);
 
