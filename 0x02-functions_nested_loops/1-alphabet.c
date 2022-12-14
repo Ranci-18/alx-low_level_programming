@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 /**
+ *maint - entry point
+ *
  *function prints alphabet
+ *
  *Return: Always 0 (Success)
  */
 
