@@ -8,12 +8,16 @@
  *Return: absolute value
  */
 
-int _abs(int x, int y)
+int _abs(int x)
 {
-	x = -1;
-	y = abs(x);
+	if (x >= 0)
+		{
+		return (x);
+		}
 
-	putchar(y);
-	return (y);
+	else 
+		{
+		return -x;
+		}
 
 }
