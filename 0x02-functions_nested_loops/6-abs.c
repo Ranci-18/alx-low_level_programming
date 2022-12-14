@@ -8,8 +8,9 @@
  *Return: absolute value
  */
 
-int _abs(int x = -1;)
+int _abs(int x)
 {
+	x = -1;
 	int y = abs(x);
 
 	putchar(y);
