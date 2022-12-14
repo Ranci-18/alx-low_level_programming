@@ -3,7 +3,7 @@
 
 /**
  *print_sign - prints sign of a number
- *
+ *@n: holds value to be tested
  *Return: 1 is positive, otherwise 0 for negative
  */
 
