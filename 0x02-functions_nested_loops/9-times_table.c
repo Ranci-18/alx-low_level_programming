@@ -20,12 +20,12 @@ void times_table(void)
 			{
 			int o = m * n;
 
-			if (o <= 9)
+			if (o <= 9 && o != 0)
 				{
-				_putchar(o + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(o + '0');
 				}
 			else
 				{
