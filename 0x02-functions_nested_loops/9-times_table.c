@@ -20,18 +20,18 @@ void times_table(void)
 			{
 			int o = m * n;
 
-			if (o <= 9)
+			if (o < 9)
 				{
 				_putchar(o + '0');
 				_putchar(',');
-				_putchar(' ');
+				_putchar('  ');
 				}
 			else
 				{
 				_putchar((o / 10) + '0');
 				_putchar((o % 10) + '0');
 				_putchar(',');
-				_putchar(' ');
+				_putchar('  ');
 				}
 
 			}
