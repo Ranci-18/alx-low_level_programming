@@ -8,7 +8,7 @@
  *
  *@y: is second number
  *
- *Returns: Add number one and number two
+ *Return: Add number one and number two
  *
  */
 
