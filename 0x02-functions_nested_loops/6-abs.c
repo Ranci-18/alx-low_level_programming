@@ -8,7 +8,7 @@
  *Return: absolute value
  */
 
-int _abs(int x int y)
+int _abs(int x, int y)
 {
 	x = -1;
 	int y = abs(x);
