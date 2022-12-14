@@ -10,9 +10,9 @@
 
 int _abs(int x)
 {
-	int x = abs(x);
+	int y = abs(x);
 
-	putchar(x);
-	return (x);
+	putchar(y);
+	return (y);
 
 }
