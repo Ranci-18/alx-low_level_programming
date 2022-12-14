@@ -24,14 +24,16 @@ void times_table(void)
 				{
 				_putchar(o + '0');
 				_putchar(',');
-				_putchar('  ');
+				_putchar(' ');
+				_putchar(' ');
 				}
 			else
 				{
 				_putchar((o / 10) + '0');
 				_putchar((o % 10) + '0');
 				_putchar(',');
-				_putchar('  ');
+				_putchar(' ');
+				_putchar(' ');
 				}
 
 			}
