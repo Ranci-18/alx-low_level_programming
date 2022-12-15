@@ -6,7 +6,7 @@
  *
  *
  *
- *
+ *Return: Always 0 (Success)
  */
 
 void more_numbers(void)
