@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- *main - entry point
+ *main - prints numbers between 1 and 100,
+ *and substitutes words for multiples of 3 and 5
  *
  *
  *Return: Always 0 (Success)
