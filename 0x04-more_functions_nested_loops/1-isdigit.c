@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  *_isdigit - checks is 'c' is a digit
