@@ -3,9 +3,9 @@
 #include <ctype.h>
 
 /**
- *_isdigit - checks is 'c' is a digit
+ *_isdigit - checks if 'c' is a digit
  *
- *
+ *@c: holds value to be tested
  *
  *Return: 1 if c is a digit, 0 if not
  */
