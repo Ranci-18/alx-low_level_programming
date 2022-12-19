@@ -2,9 +2,10 @@
 #include <string.h>
 
 /**
+ *puts_half - prints half the characters and otherwise prints
+ *last n numbers if numbers are odd
  *
- *
- *
+ *@str: pointer to the string
  *
  */
 void puts_half(char *str)
@@ -24,7 +25,7 @@ void puts_half(char *str)
 		n = (length - 1) / 2;
 		if (n % 2 == 1)
 		{
-			for (j = length - n; j < length; j++)
+			for (j = length - n - 1; j < length; j++)
 			putchar(str[j]);
 		}
 	}
