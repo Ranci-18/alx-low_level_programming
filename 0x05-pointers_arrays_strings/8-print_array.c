@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
+ *print_array - prints elements of array
  *
- *
- *
- *
+ *@a: pointer of array
+ *@n: n elements in array
  */
 void print_array(int *a, int n)
 {
