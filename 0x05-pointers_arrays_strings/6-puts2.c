@@ -12,7 +12,7 @@ void puts2(char *str)
 	int k;
 
 	k = 0;
-	while (str[k] != '\0')
+	while (str[k] < '\0')
 	{
 		putchar(str[k]);
 		k = k + 2;
