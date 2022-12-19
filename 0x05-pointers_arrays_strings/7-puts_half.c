@@ -30,6 +30,10 @@ void puts_half(char *str)
 		{
 			if (j == half_length)
 			{
+				putchar('n');
+			}
+			else
+			{
 				putchar(str[j]);
 			}
 		}
