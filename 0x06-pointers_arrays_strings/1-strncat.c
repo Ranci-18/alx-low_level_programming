@@ -11,15 +11,22 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int dest_len;
 	int i;
+	int j;
 
-	dest_len = strlen(dest);
-	for (i = 0; i < n; i++)
+	i = 0;
+	j = 0;
+	while (dest[j] != '\0')
 	{
-		if (src[i] != '\0')
-		dest[dest_len + i] = src[i];
+		j++;
 	}
-	dest[dest_len + i] = '\0';
+	while (i < n)
+	{
+		dest[j] = src[i];
+		if (src[i] == '\0')
+			break;
+		j++;
+		i++;
+	}
 	return (dest);
 }
