@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 /**
  **_strncpy - function copies src string to dest string up to nth character
  *
  *@dest: destination string
- @src: source string
- @n: copy limit
+ *@src: source string
+ *@n: copy limit
  *
  *
  *Return: dest
