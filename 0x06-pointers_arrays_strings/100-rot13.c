@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  **rot13 - rotates characters 13 times
- *
+ *@s: is the string
  *
  *Return: s
  */
