@@ -11,7 +11,7 @@ int is_prime_digit(int x, int i)
 	{
 		if (x == i)
 			return (1);
-		
+
 		else
 			return (0);
 	}
