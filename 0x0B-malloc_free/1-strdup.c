@@ -11,7 +11,6 @@ char *_strdup(char *str)
 {
 	char *s;
 	int i;
-	/*int j;*/
 	int bytes;
 
 	bytes = (strlen(str) + 1);
@@ -19,8 +18,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	/*for (j = 0; str[j] != '\0'; j++)
-		;*/
 	s = malloc(bytes);
 	if (s == NULL)
 	{
