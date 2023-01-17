@@ -3,6 +3,7 @@
 #include "main.h"
 /**
  *init_dog - initializes struct dog
+ *@d: struct pointer
  *@name: name of the dog
  *@age: age of the dog
  *@owner: owner of the dog
