@@ -1,7 +1,11 @@
 #ifndef DOG_H
 
 #define DOG_H
-
+/**
+ *dog_t - alias for dog
+ *
+ */
+typedef struct dog dog_t;
 /**
  *struct dog - struct stores info about a dog
  *@name: name of the dog
