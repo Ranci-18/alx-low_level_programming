@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *binary_to_uint - prints binary representaion of a number 
- *@n: number 
- * 
- * 
- *Return: no return 
+ *binary_to_uint - prints binary representaion of a number
+ *@n: number
+ *
+ *
+ *Return: no return
  */
 void print_binary(unsigned long int n)
 {
