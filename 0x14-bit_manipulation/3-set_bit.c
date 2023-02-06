@@ -9,21 +9,14 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int i;
 	unsigned int mask;
 
-	if (n == 0 && index < 63)
+	if (n == 0 && index > 63)
 	{
 		return (-1);
 	}
-	for (i = 0; i <= 63; *n >>= 1, i++)
-	{
-		if (index == i)
-		{
-			mask = 1 << index;
-			*n = (*n | mask);
-			return (1);
-		}
-	}
-	return (-1);
+	mask = 1 << index;
+	*n = (*n | mask);
+
+	return (1);
 }
