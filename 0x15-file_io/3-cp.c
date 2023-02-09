@@ -34,8 +34,7 @@ void handl_errors(int file_from, int file_to, char *argv[])
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, close_err;
-	ssize_t cp, letters;
+	int cp, letters, file_from, file_to, close_err;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -43,7 +42,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
+	if (!argv[1])
+		handl_errors(-1, 0, argv);
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_APPEND | O_TRUNC, 0664);
 	handl_errors(file_from, file_to, argv);
