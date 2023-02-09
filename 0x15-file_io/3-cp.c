@@ -34,7 +34,8 @@ void handl_errors(int file_from, int file_to, char *argv[])
  */
 int main(int argc, char *argv[])
 {
-	int letters, cp, file_from, file_to, close_err;
+	int file_from, file_to, close_err;
+	ssize_t cp, letters;
 	char buffer[1024];
 
 	if (argc != 3)
