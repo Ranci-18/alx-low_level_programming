@@ -1,0 +1,1 @@
+Directory contains projects pertaining C concept - doubly linked lists.
