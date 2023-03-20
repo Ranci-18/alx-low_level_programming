@@ -1,1 +1,1 @@
-The Directory contains exercises pertaining to Dynamic libraries in C programming.
+The Directory contains exercises pertaining to Dynamic libraries in C programming and shell scripting.
