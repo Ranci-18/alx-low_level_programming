@@ -1,0 +1,1 @@
+Repository contains project tasks pertaining to Hash Table data structures in C, completed by dev Frank Ng'ang'a.
