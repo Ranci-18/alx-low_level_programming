@@ -13,7 +13,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *node;
 	unsigned long int index;
 
-	if (key == NULL)
+	if (key == NULL || ht == NULL)
 		return (NULL);
 
 	node = malloc(sizeof(hash_node_t));
@@ -27,7 +27,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		node = node->next;
 	}
-	if (node == NULL)
+	if (node == NULL || strcmp(node->key, key) != 0)
 		return (0);
 
 	return (node->value);
