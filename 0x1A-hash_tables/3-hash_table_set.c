@@ -8,7 +8,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	int index;
+	unsigned long int index;
 	hash_node_t *new_pair_el, *pair_el;
 
 	if (!key || !ht)
@@ -17,10 +17,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 	pair_el = ht->array[index];
 
-	while (pair_el->next != NULL && strcmp(pair_el->key, key) != 0)
+	while (pair_el != NULL && strcmp(pair_el->key, key) != 0)
+	{
 		pair_el = pair_el->next;
-	
-	if (strcmp(pair_el->key, key) == 0)
+	}
+	if (pair_el != NULL)
 	{
 		if (strcmp(pair_el->value, value) != 0)
 		{
@@ -28,28 +29,50 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			pair_el->value = strdup(value);
 		}
 	}
+	else
+	{
+		new_pair_el = create_node(key, value);
+		if (new_pair_el == NULL)
+			return (0);
+		new_pair_el->next = ht->array[index];
+		ht->array[index] = new_pair_el;
+	}
 	return (1);
-	
-	new_pair_el = malloc(sizeof(hash_node_t));
-	if (new_pair_el == NULL)
-		return (0);
+}
+/**
+ *create_node - creates a new node
+ *@key: key
+ *@value: value to write to new node
+ *
+ *
+ *Return: created node
+ */
+hash_node_t *create_node(const char *key, const char *value)
+{
+	hash_node_t *node;
 
-	new_pair_el->next = NULL;
-	new_pair_el->key = strdup(key);
-	if (new_pair_el->key == NULL)
+	if (key == NULL || value == NULL)
 	{
-		free(new_pair_el);
 		return (0);
 	}
-	new_pair_el->value = strdup(value);
-	if (new_pair_el-> value == NULL)
+	node = malloc(sizeof(hash_node_t));
+	if (node == NULL)
 	{
-		free(new_pair_el->key);
-		free(new_pair_el);
 		return (0);
 	}
-	new_pair_el->next = ht->array[index];
-	ht->array[index] = new_pair_el;
-	
-	return (1);
+	node->key = strdup(key);
+	if (node->key == NULL)
+	{
+		free(node);
+		return (0);
+	}
+	node->value = strdup(value);
+	if (node->value == NULL)
+	{
+		free(node->key);
+		free(node);
+		return (0);
+	}
+	node->next = NULL;
+	return (node);
 }
