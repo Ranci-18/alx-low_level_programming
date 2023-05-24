@@ -6,7 +6,7 @@ RM:=rm -f
 
 .PHONY: $(NAME)
 all: $(NAME)
-$(NAME): $(OBJ)
+$(NAME): m.h $(OBJ)
 	$(CC) -Wall -Werror -Wextra -pedantic  $(SRC) -o $(NAME)
 
 clean:
@@ -19,5 +19,3 @@ fclean: clean oclean
 
 re: fclean all
 
-$(OBJ): $(SRC) m.h
-	$(CC) -c $< -o $@
