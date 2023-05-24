@@ -6,7 +6,7 @@ NAME=school
 .PHONY: $(NAME)
 all: $(NAME)
 $(NAME): m.h $(OBJ)
-	$(CC) -Wall -Werror -Wextra -pedantic  $(SRC) -o $(NAME)
+	$(CC) $(SRC) -o $(NAME) -Wall -Werror -Wextra -pedantic
 
 clean:
 	$(RM) *~ $(NAME)
