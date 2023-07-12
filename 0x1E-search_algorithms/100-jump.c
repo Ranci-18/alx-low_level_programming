@@ -1,10 +1,10 @@
 #include "search_algos.h"
 /**
- *linear_search - searches for a number sequentially
+ *linear_srch - searches for a number sequentially
  *@array: array pointer
  *@prev: initial index
  *@size: size of array
- *
+ *@value: value to search for
  *Return: index of number
  */
 int linear_srch(int *array, int prev, size_t size, int value)
